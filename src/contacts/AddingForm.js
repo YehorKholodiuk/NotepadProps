@@ -1,10 +1,13 @@
 import React from 'react';
 
 const AddingForm = () => {
+    const addButtonHandler = () => {
+        console.log('add button')
+    }
     return (
         <div>
             <input type ="text" placeholder='Contact name'/>
-            <button onClick={() => console.log('add button')}>Add</button>
+            <button onClick={addButtonHandler}>Add</button>
         </div>
     );
 };
